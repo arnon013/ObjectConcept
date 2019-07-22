@@ -2,8 +2,8 @@ package th.ac.npru.arnon.oop;
 
 
 public abstract class shape {
-	String color;
-	double area;
+	protected String color;
+	protected double area;
 
 	abstract double getArea();
 
@@ -11,7 +11,7 @@ public abstract class shape {
 		return "Color : " + color + "\nArea : " + area;
 	}
 
-	void setColor(String colorValue) {
+	public void setColor(String colorValue) {
 		color = colorValue;
 	}
 }

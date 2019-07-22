@@ -1,16 +1,16 @@
 package th.ac.npru.arnon.oop;
 
 public class Rectangle extends shape {
-	int length;
-	int width;
+	private int length;
+	private int width;
 
-	Rectangle(int lengthValue, int widthValue) {
+	public Rectangle(int lengthValue, int widthValue) {
 		length = lengthValue;
 		width = widthValue;
 	}
 
 	@Override
-	double getArea() {
+	public double getArea() {
 		area = length * width;
 		return area;
 	}
